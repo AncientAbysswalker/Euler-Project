@@ -9,10 +9,15 @@ Probably the easiest conceptually so far. The number 2520 is the smallest produc
 
 For example, in the range 1 through 10, we have primes 2 3 5 7. With regards to the non-primes 4 6 8 9 10 we get:
 4 = 2 x 2
+
 6 = 2 x 3
+
 8 = 2 x 2 x 2
+
 9 = 3 x 3
+
 10 = 2 x 5
+
 So we can say that the maximum counts of the primes are 3 2 5 and 0 for 2 3 5 and 7 respectively, so the product becomes <a href="https://www.codecogs.com/eqnedit.php?latex=2^3\cdot&space;3^2\cdot&space;5^1\cdot&space;7^0&space;=&space;2520" target="_blank"><img src="https://latex.codecogs.com/gif.latex?2^3\cdot&space;3^2\cdot&space;5^1\cdot&space;7^0&space;=&space;2520" title="2^3\cdot 3^2\cdot 5^1\cdot 7^0 = 2520" /></a>
 
 The only other thing of note here is I decided to play around with dicts for this problem's solution
