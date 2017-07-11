@@ -27,7 +27,7 @@ This last step I had to do by hand and pattern recognition
 
 ...
 
-(n-4) x (			 ... + (n-3) + (n-2) + (n-1) + n)
+(n-4) x (			  + (n-3) + (n-2) + (n-1) + n)
 
 (n-3) x (                          (n-2) + (n-1) + n)
 
