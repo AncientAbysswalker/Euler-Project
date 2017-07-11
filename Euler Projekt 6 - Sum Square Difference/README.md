@@ -11,6 +11,7 @@ Hence the difference between the sum of the squares of the first ten natural num
 
 ## Solution
 This essentially comes down to simplifying the expression. This relationship is just two sums:
+
 <a href="https://www.codecogs.com/eqnedit.php?latex={\left(\sum_{i=1}^{n}&space;i&space;\right)}^{2}-&space;\sum_{i=1}^{n}&space;i^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{\left(\sum_{i=1}^{n}&space;i&space;\right)}^{2}-&space;\sum_{i=1}^{n}&space;i^2" title="{\left(\sum_{i=1}^{n} i \right)}^{2}- \sum_{i=1}^{n} i^2" /></a>
 
 And the first sum is special and can be simplified as follows:
