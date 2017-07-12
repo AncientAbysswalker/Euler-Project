@@ -14,4 +14,5 @@ for i in range(1,upperLimit):
 	sum+=int(2*i*(upperLimit*(upperLimit-i) - (upperLimit-i-1)*(upperLimit-i)/2))
 	
 print(sum)
-	
+
+
