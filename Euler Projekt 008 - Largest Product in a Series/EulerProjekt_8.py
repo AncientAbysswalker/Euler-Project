@@ -5,12 +5,8 @@ Created on Tue Jul 11, 2017
 @author: Abysswalker
 """
 
-from lxml import html
 import requests
 from bs4 import BeautifulSoup
-
-page=requests.get('https://projecteuler.net/problem=8')
-tree = html.fromstring(page.content)
 
 r = requests.get('https://projecteuler.net/problem=8')
 data = r.text
