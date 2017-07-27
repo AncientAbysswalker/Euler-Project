@@ -14,8 +14,8 @@ def binom(n,k):
 	return int(fact(n)/fact(k)/fact(n-k))
 
 #lattice grid is 1 larger than grid size
-latGrid=21
+latGrid=20
 
 #print the number of paths
-pathCnt=binom(2*(latGrid-1),latGrid-1)
+pathCnt=binom(2*latGrid,latGrid)
 print(pathCnt)
