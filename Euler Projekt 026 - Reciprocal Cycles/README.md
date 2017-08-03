@@ -19,7 +19,7 @@ A unit fraction contains 1 in the numerator. The decimal representation of the u
 Where 0.1(6) means 0.166666..., and has a 1-digit recurring cycle. It can be seen that 1/7 has a 6-digit recurring cycle.
 
 ## Solution
-First off, I know that for any divisor that is a pure multiple of 2s and 5s the decimal is non-repeating. All other fractions have repeats. I learned this back in school, though it isn't common knowledge from my understanding. The next part of the problem then becomes determining how long the repeating sequence is by producing each decimal - though to me this is too brute-force. The number of decimals is actually related to the denominator.
+First off, I know that for any divisor that is a pure multiple of 2s and 5s the decimal is non-repeating. All other fractions have repeats. I learned this back in school, though it isn't common knowledge from my understanding. The next part of the problem then becomes determining how long the repeating sequence is by producing each decimal - though to me this is too brute-force. The number of decimals is actually related to the denominator (reduced so there are no factors of 2 or 5). Of course b>0 in the below formula.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=given\;&space;\frac{1}{d},\;&space;\left&space;\{&space;length\;&space;repeat&space;\right&space;\}=b\;&space;for\;&space;(10^b)\%d=1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?given\;&space;\frac{1}{d},\;&space;\left&space;\{&space;length\;&space;repeat&space;\right&space;\}=b\;&space;for\;&space;(10^b)\%d=1" title="given\; \frac{1}{d},\; \left \{ length\; repeat \right \}=b\; for\; (10^b)\%d=1" /></a>
 
