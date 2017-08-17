@@ -4,7 +4,7 @@
 
 By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.
 
-<a href="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20067%20-%20Maximum%20path%20sum%20I/SmallTri.png" target="_blank"><img src="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20067%20-%20Maximum%20path%20sum%20I/SmallTri.png" title="Triangle" /></a>
+<a href="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20067%20-%20Maximum%20path%20sum%20II/SmallTri.png" target="_blank"><img src="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20067%20-%20Maximum%20path%20sum%20II/SmallTri.png" title="Triangle" /></a>
 
 That is, 3 + 7 + 4 + 9 = 23.
 
