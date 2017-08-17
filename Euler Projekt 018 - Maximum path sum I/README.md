@@ -25,4 +25,4 @@ Looking at the above diagram we can see my method applied to the example. Starti
 
 Observing the pattern we can easily determine the time complexity. Each triangle contains 3 computations, and the number of triangles is the depth of the computation row - 3,2,1 - which starts from n-1 where n is the triangle height. Therefore:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{3n(n-1)}{2}\rightarrow&space;\Theta&space;(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{3n(n-1))}{2}\rightarrow&space;\Theta&space;(n^2)" title="\frac{3n(n-1)}{2}\rightarrow \Theta (n^2)" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{3n(n-1)}{2}\rightarrow&space;\Theta&space;(n^2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{3n(n-1)}{2}\rightarrow&space;\Theta&space;(n^2)" title="\frac{3n(n-1)}{2}\rightarrow \Theta (n^2)" /></a>
