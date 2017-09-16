@@ -16,7 +16,7 @@ The first thing to do here is determine the range through which we need to searc
 Funny enough I typo'd the original code and you only need to run to 5 digits because there are apparently no numbers in the range of 99999 to 999999 that can be written as their sum of fifth-power digits. Interresting :)
 
 `      9 < 59049`
-`     99 < 118098`
+'     99 < 118098'
     999 < 177147
    9999 < 236196
   99999 < 295245
