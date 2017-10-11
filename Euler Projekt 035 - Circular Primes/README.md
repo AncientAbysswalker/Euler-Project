@@ -1,17 +1,12 @@
-# Maximum path sum II
+# Circular primes
 
 ## Problem Statement
 
-By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.
+The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime. There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.
 
-<a href="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20067%20-%20Maximum%20path%20sum%20II/SmallTri.png" target="_blank"><img src="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20067%20-%20Maximum%20path%20sum%20II/SmallTri.png" title="Triangle" /></a>
-
-That is, 3 + 7 + 4 + 9 = 23.
-
-Find the maximum total from top to bottom in triangle.txt (right click and 'Save Link/Target As...'), a 15K text file containing a triangle with one-hundred rows.
-
-NOTE: This is a much more difficult version of Problem 18. It is not possible to try every route to solve this problem, as there are 299 altogether! If you could check one trillion (1012) routes every second it would take over twenty billion years to check them all. There is an efficient algorithm to solve it. ;o)
-
+How many circular primes are there below one million?
 
 ## Solution
-I have explained my algorithm in my [solution to Projekt 18](https://github.com/AncientAbysswalker/Projekt-Euler/tree/master/Euler%20Projekt%20018%20-%20Maximum%20path%20sum%20I)
+This is a relatively easy problem. I wrote a function to rotate any input text, in this case the set of promes we are testing below one million. I modified my previous code regarding prime generation to allow me to store the primes as a file for future re-runs, and to also store the values as a set, which is a more efficient data structure than a list for determining if an object is an element of a set.
+
+For each of the primes below one million, I check the rotations to see if they are also included in the set; if all rotations were included in the set I added them to a new set of circular primes. I also removed the circular primes from the original primes list so that I wouldn't print out circular sets more than once, but I want to point out that this slows down the code as it is extra unnecessary steps for the processor. As it is, the set data structure is extremely efficient at determining whether an object is an element of a set and removing elements takes more time than is saved in the checking process for the extra elements in question.
