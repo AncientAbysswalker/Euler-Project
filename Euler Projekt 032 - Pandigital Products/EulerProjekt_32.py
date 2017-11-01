@@ -23,12 +23,12 @@ s2set2=set(range(100,999+1))
 
 for i in s1set1:
 	for j in s1set2:
-		if isPandigital9(str(i)+str(j)+str(i*j),9) and len(str(i*j))==4:
+		if isPandigital9(str(i)+str(j)+str(i*j)) and len(str(i*j))==4:
 			products.add(i*j)
 
 for i in s2set1:
 	for j in s2set2:
-		if isPandigital9(str(i)+str(j)+str(i*j),9) and len(str(i*j))==4:
+		if isPandigital9(str(i)+str(j)+str(i*j)) and len(str(i*j))==4:
 			products.add(i*j)
 
 print(sum(products))
