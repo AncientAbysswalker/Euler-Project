@@ -17,4 +17,4 @@ This problem is easiest solved using a dynamic program that recurs over coin sum
 
 I understand this process is not the easiest to visualize, I had some problems visualizing it at first too, so I made the gif below to demonstrate this for a lower value coin like 5 pence.
 
-<a href="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20015%20-%20Coin%20Sums/CoinGIF.gif"><img src="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20015%20-%20Coin%20Sums/CoinGIF.gif" title="Coin Sums" /></a>
+<a href="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20031%20-%20Coin%20Sums/CoinGIF.gif"><img src="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20031%20-%20Coin%20Sums/CoinGIF.gif" title="Coin Sums" /></a>
