@@ -13,7 +13,6 @@ def digit_Champernowne(n):
 	
 	precedent=10**(depth)
 	[fwd,digit]=divmod(n-1,depth+1)
-	print(n,fwd,depth,precedent,digit)
 	
 	return int(str(precedent+fwd)[digit])
 
