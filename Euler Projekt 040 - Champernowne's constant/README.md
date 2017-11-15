@@ -23,4 +23,4 @@ The next half of the battle is determining how far in the intended range we need
 
 I understand this process is somewhat confusing, and I admit myself that this took a bit of tinkering and thought to get it to function properly, but it works beautifully. I made the following infographic to help visualize this.
 
-<a href="https://github.com/AncientAbysswalker/Projekt-Euler/tree/master/Euler%20Projekt%20040%20-%20Champernowne's%20constant/champernowne.png" target="_blank"><img src="https://github.com/AncientAbysswalker/Projekt-Euler/tree/master/Euler%20Projekt%20040%20-%20Champernowne's%20constant/champernowne.png" title="champernowne" /></a>
+<a href="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20040%20-%20Champernowne's%20constant/champernowne.png" target="_blank"><img src="https://github.com/AncientAbysswalker/Projekt-Euler/blob/master/Euler%20Projekt%20040%20-%20Champernowne's%20constant/champernowne.png" title="champernowne" /></a>
