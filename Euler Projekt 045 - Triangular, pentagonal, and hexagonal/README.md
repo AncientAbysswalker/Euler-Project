@@ -15,7 +15,7 @@ Find the next triangle number that is also pentagonal and hexagonal.
 ## Solution
 Once again we return to the formulae for figurate numbers. Each of the three figurate numbers we have here have their respective inverse functions, derived from the positive of the quadratic formula (I have shown this before, and as I previously stated only the positive root produces a valid natural number):
 
-![Triangular]("https://latex.codecogs.com/gif.latex?T_n(n)=\frac{1}{2}n(n&plus;1)\leftrightarrow&space;n=T_n^{-1}=\frac{1&plus;\sqrt{1&plus;8T_n}}{2}")
+![Triangular](https://latex.codecogs.com/gif.latex?T_n(n)=\frac{1}{2}n(n&plus;1)\leftrightarrow&space;n=T_n^{-1}=\frac{1&plus;\sqrt{1&plus;8T_n}}{2})
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P_n(n)=\frac{1}{2}n(3n-1)\leftrightarrow&space;n=P_n^{-1}=\frac{1&plus;\sqrt{1&plus;24P_n}}{6}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P_n(n)=\frac{1}{2}n(3n-1)\leftrightarrow&space;n=P_n^{-1}=\frac{1&plus;\sqrt{1&plus;24P_n}}{6}" title="P_n(n)=\frac{1}{2}n(3n-1)\leftrightarrow n=P_n^{-1}=\frac{1+\sqrt{1+24P_n}}{6}" /></a>
 
