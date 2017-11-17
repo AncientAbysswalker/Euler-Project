@@ -15,10 +15,14 @@ Find the next triangle number that is also pentagonal and hexagonal.
 ## Solution
 Once again we return to the formulae for figurate numbers. Each of the three figurate numbers we have here have their respective inverse functions, derived from the positive of the quadratic formula (I have shown this before, and as I previously stated only the positive root produces a valid natural number):
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=T_n(n)=\frac{1}{2}n(n&plus;1)\leftrightarrow&space;n=T_n^{-1}=\frac{1&plus;\sqrt{1&plus;8T_n}}{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T_n(n)=\frac{1}{2}n(n&plus;1)\leftrightarrow&space;n=T_n^{-1}=\frac{1&plus;\sqrt{1&plus;8T_n}}{2}" title="T_n(n)=\frac{1}{2}n(n+1)\leftrightarrow n=T_n^{-1}=\frac{1+\sqrt{1+8T_n}}{2}" /></a>
+<img src="https://latex.codecogs.com/gif.latex?T_n(n)=\frac{1}{2}n(n&plus;1)\leftrightarrow&space;n=T_n^{-1}=\frac{1&plus;\sqrt{1&plus;8T_n}}{2}" title="T_n(n)=\frac{1}{2}n(n+1)\leftrightarrow n=T_n^{-1}=\frac{1+\sqrt{1+8T_n}}{2}" />
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=P_n(n)=\frac{1}{2}n(3n-1)\leftrightarrow&space;n=P_n^{-1}=\frac{1&plus;\sqrt{1&plus;24P_n}}{6}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P_n(n)=\frac{1}{2}n(3n-1)\leftrightarrow&space;n=P_n^{-1}=\frac{1&plus;\sqrt{1&plus;24P_n}}{6}" title="P_n(n)=\frac{1}{2}n(3n-1)\leftrightarrow n=P_n^{-1}=\frac{1+\sqrt{1+24P_n}}{6}" /></a>
+<img src="https://latex.codecogs.com/gif.latex?P_n(n)=\frac{1}{2}n(3n-1)\leftrightarrow&space;n=P_n^{-1}=\frac{1&plus;\sqrt{1&plus;24P_n}}{6}" title="P_n(n)=\frac{1}{2}n(3n-1)\leftrightarrow n=P_n^{-1}=\frac{1+\sqrt{1+24P_n}}{6}" />
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=H_n(n)=n(2n-1)\leftrightarrow&space;n=H_n^{-1}=\frac{1&plus;\sqrt{1&plus;8H_n}}{4}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_n(n)=n(2n-1)\leftrightarrow&space;n=H_n^{-1}=\frac{1&plus;\sqrt{1&plus;8H_n}}{4}" title="H_n(n)=n(2n-1)\leftrightarrow n=H_n^{-1}=\frac{1+\sqrt{1+8H_n}}{4}" /></a>
+<img src="https://latex.codecogs.com/gif.latex?H_n(n)=n(2n-1)\leftrightarrow&space;n=H_n^{-1}=\frac{1&plus;\sqrt{1&plus;8H_n}}{4}" title="H_n(n)=n(2n-1)\leftrightarrow n=H_n^{-1}=\frac{1+\sqrt{1+8H_n}}{4}" />
 
 I solved the problem with brute force. All three types of numbers follow quadratic curves, meaning each entry gets farther and farther from its predecessor. In addition, the hexagonal numbers group scales up the fastest of the three number groups. This allows us to easily brute force this problem by generating each hexagonal number and checking if it is both pentagonal and triangular.
+
+In addition I was able to determine the general formula for figurate numbers. If x is the number of "sides" to the figurate number, then:
+
+<img src="https://latex.codecogs.com/gif.latex?F_n(x,n)=\frac{1}{2}n\left&space;[&space;(x-2)n&plus;(4-x)&space;\right&space;]\leftrightarrow&space;n=F_n^{-1}=\frac{(x-4)&plus;\sqrt{(4-x)^2&plus;8(x-2)F_n}}{2(x-2)}" title="F_n(x,n)=\frac{1}{2}n\left [ (x-2)n+(4-x) \right ]\leftrightarrow n=F_n^{-1}=\frac{(x-4)+\sqrt{(4-x)^2+8(x-2)F_n}}{2(x-2)}" />
