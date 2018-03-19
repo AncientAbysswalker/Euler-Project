@@ -1,12 +1,12 @@
-# Circular primes
+# Truncatable primes
 
 ## Problem Statement
 
-The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime. There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.
+The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly we can work from right to left: 3797, 379, 37, and 3.
 
-How many circular primes are there below one million?
+Find the sum of the only eleven primes that are both truncatable from left to right and right to left.
+
+NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 
 ## Solution
-This is a relatively easy problem. I wrote a function to rotate any input text, in this case the set of promes we are testing below one million. I modified my previous code regarding prime generation to allow me to store the primes as a file for future re-runs, and to also store the values as a set, which is a more efficient data structure than a list for determining if an object is an element of a set.
-
-For each of the primes below one million, I check the rotations to see if they are also included in the set; if all rotations were included in the set I added them to a new set of circular primes. I also removed the circular primes from the original primes list so that I wouldn't print out circular sets more than once, but I want to point out that this slows down the code as it is extra unnecessary steps for the processor. As it is, the set data structure is extremely efficient at determining whether an object is an element of a set and removing elements takes more time than is saved in the checking process for the extra elements in question.
+This problem's premise is relatively simple; checking if a number is left or right trunkable is easily achieved through the use of a function. Initially I thought about this problem in a rather complicated manner, thinking to 'grow' these numbers from a seed. All trunkable primes like this could be grown recursively from a seed that is a prime, and must remain prime and trunkable continuously left or right all the way as it is grown. In theory this is viable, though I had issue getting it to produce reasonable results. Then I realized the simple solution - since I already have a file of primes up to the high 7-digits, I can just check the trunkable-ness of each prime in this set. Doing so took slightly longer than my original method likely would, but produced 11 primes as expected and the correct sum.
