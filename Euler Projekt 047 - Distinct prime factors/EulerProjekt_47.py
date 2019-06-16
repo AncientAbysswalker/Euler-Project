@@ -42,7 +42,8 @@ def permute_factors(factors):
         return factors + 1
 
     if type(factors) == list:
-        pass
+        if factors == [0, 0, 0, 0]:
+            return [0, 0, 0, 1]
 
     return True
 
