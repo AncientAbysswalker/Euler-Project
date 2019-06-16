@@ -49,10 +49,19 @@ def permute_factors(factors):
 
 class TestPermute(unittest.TestCase):
     def test_none(self):
+        """Test behaviour if nothing is passed"""
         self.assertIsNone(permute_factors(None))
 
     def test_integer(self):
+        """Test behaviour if a single integer is passed"""
         self.assertEqual(permute_factors(4), 5)
+        self.assertEqual(permute_factors(9), 10)
+        self.assertEqual(permute_factors(999), 1000)
+        self.assertEqual(permute_factors(658), 659)
+
+    def test_list(self):
+        """Test behaviour if a list of integers is passed"""
+        self.assertEqual(permute_factors([0, 0, 0, 0]), [0, 0, 0, 1])
 
 
 if __name__ == '__main__':
