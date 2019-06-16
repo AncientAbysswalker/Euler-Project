@@ -45,7 +45,7 @@ def permute_factors(factors):
         if factors == [0, 0, 0, 0]:
             return [0, 0, 0, 1]
 
-    return True
+    raise TypeError("permute_factors(n) only functions for type(n) as None, int, or list: int")
 
 
 class TestPermute(unittest.TestCase):
@@ -63,6 +63,11 @@ class TestPermute(unittest.TestCase):
     def test_list(self):
         """Test behaviour if a list of integers is passed"""
         self.assertEqual(permute_factors([0, 0, 0, 0]), [0, 0, 0, 1])
+        self.assertEqual(permute_factors([0, 0, 0, 1]), [[0, 0, 1, 1], [0, 0, 0, 2]])
+
+    def test_other(self):
+        """Test behaviour if an unintended type is passed"""
+        self.assertRaises(TypeError, permute_factors, "string")
 
 
 if __name__ == '__main__':
