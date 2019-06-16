@@ -33,6 +33,16 @@ def load_primes():
     return primes
 
 
+def recur_find_prime(factor_sets):
+    """Generate permutations of the progressions of factors"""
+
+    new_factor_sets = permute_factor_sets(factor_sets)
+
+    for factors in new_factor_sets:
+        if sum(primes[i] for i in factors) in primes:
+            return factors
+
+
 def permute_factor_sets(factor_sets):
     """Generate permutations of the progressions of factors"""
 
@@ -123,6 +133,5 @@ class TestPermute(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(exit=False)
-    print("IM IN")
-    a = load_primes()
-    print("IM DONE")
+    primes = load_primes()
+    print(recur_find_prime([0, 0, 0, 0]))
