@@ -32,8 +32,6 @@ def recursive_factorization(n, p, last=0):
 
     ls = []
 
-    print(n, last)
-
     if n in p:
         return [n]
 
@@ -94,15 +92,23 @@ def recursive_factorization(n, p, last=0):
 #     print(results)
 #
 #     return sorted(results)
-#
-#
-# class TestIncrement(unittest.TestCase):
-#     """Test behaviour of increment_factors()"""
-#
-#     def test_list(self):
-#         """Test behaviour if a list of integers is passed"""
-#         self.assertEqual(increment_factors([0, 0, 0, 0]), [[0, 0, 0, 1]])
-#         self.assertEqual(increment_factors([0, 1, 1, 1]), [[0, 1, 1, 2], [1, 1, 1, 1]])
+
+
+class TestPrimeFactors(unittest.TestCase):
+    """Test behaviour of generating prime factors recursively"""
+    primes = load_primes()
+
+    def test_factors_4(self):
+        self.assertEqual(recursive_factorization(4, TestPrimeFactors.primes), [2, 2])
+
+    def test_factors_9(self):
+        self.assertEqual(recursive_factorization(9, TestPrimeFactors.primes), [3, 3])
+
+    def test_factors_55(self):
+        self.assertEqual(recursive_factorization(55, TestPrimeFactors.primes), [5, 11])
+
+    def test_factors_356(self):
+        self.assertEqual(recursive_factorization(356, TestPrimeFactors.primes), [2, 2, 89])
 #
 #
 # class TestPermute(unittest.TestCase):
