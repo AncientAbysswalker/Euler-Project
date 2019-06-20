@@ -4,7 +4,6 @@ import unittest
 import numpy
 import os
 
-
 def load_primes(root=os.path.dirname(__file__)):
     """Read a compressed binary file of sorted primes into a list"""
     file_path = os.path.join(root, "primes.npy")
@@ -38,8 +37,8 @@ def recursive_factorization(n, p, index=0):
 def recursive_distinct_factors(n, p, index=0, adder=1):
     """Generate factors of a number recursively"""
 
-    if n in p:
-        return n != p[index]
+    # if n in p:
+    #     return n != p[index]
 
     quotient, remainder = n // p[index], n % p[index]
 
